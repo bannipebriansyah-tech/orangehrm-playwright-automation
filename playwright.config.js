@@ -46,11 +46,10 @@ export default defineConfig({
         screenshot: 'on',
         video: 'on',
         trace: 'on',
-        channel: 'chrome',
         headless: true,
         storageState: 'authState.json', // load saved login
       },
-      testIgnore: ['**/login.spec.js',], // Exclude login-related tests
+      testIgnore: ['**/login.spec.js'], // Exclude login-related tests
     },
     {
       name: 'login-tests',
@@ -60,7 +59,6 @@ export default defineConfig({
         screenshot: 'on',
         video: 'on',
         trace: 'on',
-        channel: 'chrome',
         headless: true,
         // No storageState - starts fresh without authentication
       },
